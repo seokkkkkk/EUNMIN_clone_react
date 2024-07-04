@@ -8,6 +8,30 @@ module.exports = {
     theme: {
         extend: {
             keyframes: {
+                slideIn: {
+                    "0%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideFadeIn: {
+                    "0%": { transform: "translateX(-100%)", opacity: 0 },
+                    "100%": { transform: "translateX(0)", opacity: 1 },
+                },
+                slideOut: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+                slideFadeOut: {
+                    "0%": { transform: "translateX(0)", opacity: 1 },
+                    "100%": { transform: "translateX(-100%)", opacity: 0 },
+                },
+                fadeIn: {
+                    "0%": { opacity: 0 },
+                    "100%": { opacity: 1 },
+                },
+                fadeOut: {
+                    "0%": { opacity: 0.6 },
+                    "100%": { opacity: 0 },
+                },
                 squash: {
                     "0%": { transform: "scaleY(0.1)" },
                     "50%": { transform: "scaleY(1.2)" },
@@ -15,6 +39,12 @@ module.exports = {
                 },
             },
             animation: {
+                slideIn: "slideIn 0.5s ease-out forwards",
+                slideOut: "slideOut 0.5s ease-out forwards",
+                fadeIn: "fadeIn 0.5s ease-out forwards",
+                fadeOut: "fadeOut 0.5s ease-out forwards",
+                slideFadeIn: "slideFadeIn 0.5s ease-out forwards",
+                slideFadeOut: "slideFadeOut 0.5s ease-out forwards",
                 squash: "squash 2s ease-in-out",
             },
             fontFamily: {

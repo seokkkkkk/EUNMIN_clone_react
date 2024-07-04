@@ -17,6 +17,9 @@ module.exports = {
             animation: {
                 squash: "squash 2s ease-in-out",
             },
+            fontFamily: {
+                ns: ["NanumSquare"],
+            },
         },
     },
     plugins: [

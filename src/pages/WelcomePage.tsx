@@ -23,7 +23,7 @@ const WelcomePage = () => {
             <h1
                 id="welcome-text"
                 ref={welcomeTextRef}
-                className="text-4xl animate-squash"
+                className="text-4xl animate-squash font-ns"
             >
                 Value of Better Life
             </h1>

@@ -6,10 +6,10 @@
 }
 
 .swiper-button-prev {
-    @apply top-20 left-5 md:top-12 md:left-36;
+    @apply top-[105px] left-[20px] md:top-12 md:left-[130px];
 }
 .swiper-button-next {
-    @apply top-20 left-16 md:top-12 md:left-48;
+    @apply top-[105px] left-[70px] md:top-12 md:left-[180px];
 }
 
 .swiper-button-prev::after,

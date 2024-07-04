@@ -37,6 +37,10 @@ module.exports = {
                     "50%": { transform: "scaleY(1.2)" },
                     "100%": { transform: "scaleY(1)" },
                 },
+                menuMoveLeft: {
+                    "0%": { transform: "translateX(0)", width: "100vw" },
+                    "100%": { transform: "translateX(0)", width: "370px" },
+                },
             },
             animation: {
                 slideIn: "slideIn 0.5s ease-out forwards",
@@ -46,6 +50,7 @@ module.exports = {
                 slideFadeIn: "slideFadeIn 0.5s ease-out forwards",
                 slideFadeOut: "slideFadeOut 0.5s ease-out forwards",
                 squash: "squash 2s ease-in-out",
+                menuMoveLeft: "menuMoveLeft 0.5s ease-out forwards",
             },
             fontFamily: {
                 ns: ["NanumSquare"],
